@@ -21,14 +21,14 @@ class listaUsuario{
     #Cria uma tabela de arquivos contidos no diretório especificado no construtor da classe
     public function varrerPastas(){
 
-        $tabela = ""; #Armazena a tabela de retorno
+        $tabela = ""; 
         
-        $directoryRaiz = opendir($this->listaUsuario); #Abre o diretório especificado pelo construtor
+        $directoryRaiz = opendir($this->listaUsuario); 
 
         if ($directoryRaiz) {
-            while ($pastas = readdir($directoryRaiz)) { #Lê todas as pastas que estão no diretório raiz
+            while ($pastas = readdir($directoryRaiz)) { 
                 if ($pastas != '.' && $pastas != '..') {
-                    if ($this->directoryNull($this->listaUsuario . $pastas)) { #Verifica se a pasta lida está vazia e a remove
+                    if ($this->directoryNull($this->listaUsuario . $pastas)) { 
                         rmdir($this->listaUsuario . $pastas);
                         continue;
                     }else{
@@ -48,12 +48,12 @@ class listaUsuario{
     public function listarArquivos($directory){
 
         $linhaTabela = ""; #Cria a linha de retorno para a tabela
-        $numeroRows = 0; #Utilizado para configurar o atributo 'rowspan' da linha que contiver mais que um arquivo
+        $numeroRows = 0; 
 
-        $listaUsuario = opendir($directory); #Abre a pasta do cliente
+        $listaUsuario = opendir($directory); #Abre a pasta do usuario
 
         if ($listaUsuario) {
-            while ($arquivosUsuario = readdir($listaUsuario)) { #Lê o arquivo do cliente
+            while ($arquivosUsuario = readdir($listaUsuario)) { #Lê o arquivo do usuario
                 if ($arquivosUsuario != '.' && $arquivosUsuario != '..') {
 
                     $urlArquivo = $directory . '/' . $arquivosUsuario; #Cria a URL para download e edição do arquivo
@@ -75,7 +75,7 @@ class listaUsuario{
                 }
             }
             closedir($listaUsuario);
-            if($numeroRows == 1){ #Personaliza o retorno de acordo com o número de arquivos dentro da pasta
+            if($numeroRows == 1){ #Personaliza a tabela com retorno de acordo com o número de arquivos dentro da pasta
                 return '<tr>' . '<th>' . basename($directory) . '</th>' . $linhaTabela . '</tr>';
             }else{
                 return '<tr>' . '<th scope="row" rowspan="' . $numeroRows .'">' . basename($directory) . '</th>' . $linhaTabela . '</tr>';

@@ -1,6 +1,6 @@
 <?php
 
-#Classe feita para criação dos formulários de Criação e Edição de Arquivo
+#Classe feita para criação dos formulários de Criação e Edição de Arquivos
 class Forms{
 
     private $imprimeFormulario;
