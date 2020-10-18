@@ -3,7 +3,7 @@ Projeto realizado por André Otávio Bordonal Artuzo
 <p align="center">
    <img src="https://github.com/dequim1000/trabalhoWeb/blob/main/image.png" alt="Decks Formulário" width="400"/>   
 </p>
-<p align="center">:rocket: Formulário para cadastrar usuários em Arquivo (Next Level Week) #01.</p>
+<p align="center">:rocket: Formulário para cadastrar usuários em Arquivo.</p>
 
 # :computer: Tecnologias Utilizadas
 <ul>
