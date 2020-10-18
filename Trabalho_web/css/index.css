@@ -1,0 +1,113 @@
+.name-form{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:80px;
+    font-size: 64px;
+    color:#1a387b;
+}
+
+.form-div{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+form{
+    margin: 0 auto;
+    width: 450px;
+}
+
+form label{
+    font-size:18px
+}
+.form-group{
+    max-height: 390px;
+}
+.form-control{
+    padding: 1.375rem .75rem;
+    font-size: 2rem;
+    color: #1a387b!important;
+
+}
+#btnCriar{
+    text-align: center;
+    width: 200px;
+    height: 80px;
+    font-size: 28px;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+	border-color: #ffc107;
+	width: 200px;
+    height: 80px;
+    font-size: 28px;
+}
+
+.form-group-botao{
+    text-align: center;
+}
+
+.div-vizu{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.texto-vizu{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.texto-vizu p{
+    font-size:20px;
+}
+
+.vizu{
+    height: auto;
+    width: 120px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.main .aviso{
+	align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+	font-size: 14pt;
+    line-height: 1.5;
+    margin-top: 15px;
+    color: red;
+}
+
+.main .aviso #recarregar{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+	font-size: 14pt;
+    line-height: 1.5;
+    margin-top: 15px;
+    color: #1a387b;
+}
+
+.form-div iframe {
+	display: none;
+	width: 100%;
+}
