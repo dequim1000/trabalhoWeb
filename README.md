@@ -11,7 +11,7 @@ Projeto realizado por André Otávio Bordonal Artuzo
   <li><a href="https://www.javascript.com/">Javascript</a></li>
   <li><a href="https://getbootstrap.com/">BootStrap</a></li>
   <li><a href="https://www.w3schools.com/html/">HTML</a></li>
-  <li><s herf="https://www.php.net/">PHP</a></li>
+  <li><a herf="https://www.php.net/">PHP</a></li>
 </ul>
 
 
